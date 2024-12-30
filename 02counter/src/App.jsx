@@ -14,7 +14,20 @@ function App() {
   const addValue = () => {
     console.log("clicked", counter); //before update value
 
-    counter = counter +1
+    // counter = counter +1
+
+    // setCounter(counter => counter +1)  
+    // setCounter(counter => counter +1)
+    // setCounter(counter => counter +1)
+    // setCounter(counter => counter +1)   this all gives result in only adding +1 
+
+    setCounter(prevCounter => counter +1)  //callback prevcounter value and at each step +1 is done
+    setCounter(prevCounter => counter +1)  //callback +1 added to previous 
+    setCounter(prevCounter => counter +1)  // +1
+    setCounter(prevCounter => counter +1)  // +1
+
+
+
     setCounter(counter)
     // OR  setCounter(counter + 1)
 
